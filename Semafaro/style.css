@@ -1,0 +1,129 @@
+:root{
+    --borda: #2b2b33;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #35374B, #344955, #50727B, #78A083);
+    justify-content: center;
+    align-items: end;
+}
+.container{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* -------> CORPO DO SEMAFARO <------ */
+.corpo{
+    display: flex;
+    position: absolute;
+    background-color: #79778c;
+    width: 40%;
+    height: 85%;
+    border: 3px solid var(--borda);
+    bottom: 107px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+}
+/* -------> FAROL DO SEMAFARO <------ */
+.circulo-farol{
+    display: flex;
+    border: 3px solid var(--borda);
+    height: 150px;
+    width: 150px;
+    border-radius: 170px;
+    background-color: #424659;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.sombra-farol{
+    display: flex;
+    position: relative;
+    background-color: #636363;
+    height: 120px;
+    width: 220px;
+    border-radius: 120px 120px 0px 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: end;
+}
+.circulo-central-farol{
+    position: relative;
+    background-color: #9a9a9a;
+    border-radius: 200px;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    bottom: -16px;
+}
+
+/* -------> CABO DO SEMAFARO <------ */
+.cabo{
+    display: flex;
+    position: absolute;
+    height: 110px;
+    width: 40px;
+    background-color: #c7c7c7;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    border: 3px solid var(--borda);
+    bottom: 0px;
+}
+#linha-branca{
+    height: 100%;
+    width: 30%;
+    background-color: #f0f0f0;
+}
+#sombra{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: #aaaac1;
+    justify-content: center;
+}
+#sombra-linha{
+    background-color: #b4b3cc;
+    height: 100%;
+    width: 30%;
+}
+
+/* -------> CORES <------ */
+
+/* -->Vermelho <-- */
+.farol_vermelho{
+    background-color: #9f0105 !important;
+}
+.circulo-central-vermelho{
+    background-color: #f22b3e !important;
+}
+/* -->Amarelo <-- */
+.farol_amarelo{
+    background-color: #858927c0 !important;
+}
+.circulo-central-amarelo{
+    background-color: #fcff31 !important;
+}
+/* -->Verde <-- */
+.farol_verde{
+    background-color: #019f0e !important;
+}
+.circulo-central-verde{
+    background-color: #35f22b !important;
+}

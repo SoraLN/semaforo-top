@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+
+.botao{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    left: 20%;
+    bottom: 50%;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #2b2b33;
+    border: 4px solid #4F4A45;
+    background-color: #F6F1EE;
+    box-shadow: 7px 7px 2px #4F4A45;
+}
+.botao:hover{
+    cursor: pointer;
+}
+.botao_clicado{
+    color: #F6F1EE !important;
+    border: 4px solid #6C5F5B !important;
+    background-color: #d59062 !important;
+    box-shadow: 7px 7px 2px #6C5F5B !important;
+}
